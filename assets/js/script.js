@@ -42,7 +42,16 @@ $(document).ready(function() {
   updateBackground();
   renderNotes();
 
-  // when save button is clicked input saved in local storage
+
+  // sets time in military time and displays in header
+  function setTime() {
+    var date = moment().format("dddd, MMMM Do YYYY, k:mm:ss");
+    $currentDay.innerHTML = date;
+    $("#currentDay").text(date);
+  }
+
+  // when save button is clicked input converted to string and saved in local storage
+  // targeting the sibling element with the class of col-10 to get its value as well as targeting the sibling with the id attribute to link to specific hour
   $(".saveBtn").on("click", function(e) {
     e.preventDefault();
     var val = $(this)
@@ -54,17 +63,10 @@ $(document).ready(function() {
     notes[hour] = val;
 
     localStorage.setItem("notes", JSON.stringify(notes));
-    // var storedToDoList = localStorage.getItem("toDoList")
-    // $("#9am").innerHTMl = localStorage.getItem("toDoList");
   });
-// sets time in military time 
-  function setTime() {
-    var date = moment().format("dddd, MMMM Do YYYY, k:mm:ss");
-    $currentDay.innerHTML = date;
-    $("#currentDay").text(date);
-  }
 
-// retrieve stored data 
+
+// retrieving from local storage and converting any note from string to object
   function getNotes() {
     var notes = localStorage.getItem("notes");
     if (notes) {
@@ -75,13 +77,14 @@ $(document).ready(function() {
     return notes;
   }
 
+  // looping over keys in object
   function renderNotes() {
-    // for loop for keys in object
     for (var key in notes) {
       $("#" + key).val(notes[key]);
     }
   }
 
+  // updating color blocks based on if that block is in past, present or future
   function updateBackground() {
     var currentHour = moment().hour();
     console.log(currentHour);
@@ -89,12 +92,12 @@ $(document).ready(function() {
     $(".time-block").each(function() {
       var blockHour = parseInt($(this).children(".description").attr("id"));
       $(this)
-      // remove classes
+      // remove any classes
       .removeClass("present")
       .removeClass("past")
       .removeClass("future");
       //compare with if statements
-      //$(this).addClass("present")
+      //add class("present")
       if (blockHour === currentHour) {
         $(this).addClass("present");
       };
@@ -104,8 +107,6 @@ $(document).ready(function() {
       if (blockHour > currentHour){
         $(this).addClass("future");
       };
-      console.log($(this));
-
     });
   }
 });

@@ -4,11 +4,6 @@ body {
   line-height: 1;
 }
 
-.teststyle {
-  color: black !important;
-  z-index: 100 !important; 
-}
-
 textarea{
   background: transparent;
   border: none;
