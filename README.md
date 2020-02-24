@@ -1,4 +1,6 @@
 # Work-Day-Scheduler
 I created a calendar application that functions to save events for each hour of the work day, display current date and time, and indicate whether an event or time block is in the past, present or future. When the scheduler is opened the current date and time are displayed at the top. Time blocks representing each hour in the work day are located beneath the date and time. The time blocks are color coded in order to show whether it's in the past, present or future. To set and refresh the color of the time block throughout the day I utilized the Moment.js library. When a time block is clicked an event can be entered and saved. After clicking the save button for that event/time block the event is saved in local storage so that when the page is refreshed the saved events remain in their designated time block.
 
+<img src="https://raw.githubusercontent.com/MeganLCoppins/Work-Day-Scheduler/master/assets/images/Screen%20Shot%202020-02-23%20at%205.11.23%20PM.png">
+
  https://meganlcoppins.github.io/Work-Day-Scheduler/
