@@ -21,10 +21,10 @@ $(document).ready(function() {
   $(".saveBtn").on("click", function(e) {
     e.preventDefault();
     var val = $(this)
-      .siblings(".col-10")
+      .siblings(".description")
       .val();
     var hour = $(this)
-      .siblings(".col-10")
+      .siblings(".description")
       .attr("id");
     notes[hour] = val;
 
