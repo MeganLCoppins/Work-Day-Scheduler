@@ -1,7 +1,18 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  /* background-color: rgb(170, 226, 252); */
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1;
+}
+header {
+  /* background-image: url("https://img.freepik.com/free-photo/overhead-view-baby-breath-flowers-colored-backdrop_23-2148058621.jpg?size=626&ext=jpg"); */
+  /* background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/35116wide.jpg"); */
+  /* background-image: url("https://a.rgbimg.com/users/x/xy/xymonau/600/o3oTtQI.jpg"); */
+  /* background-image: url("https://wallpapertag.com/wallpaper/full/a/2/f/626093-most-popular-dark-flower-wallpaper-1920x1080-mobile.jpg"); */
+  background-image: url("https://cache.desktopnexus.com/thumbseg/2527/2527500-bigthumbnail.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 textarea{
@@ -16,13 +27,17 @@ textarea{
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 20px;
   border-radius: 0;
   border-bottom: 10px solid black;
 }
 
 .description{
   white-space: pre-wrap;
+  text-align: center;
+  border-left: 2px solid white;
 }
 
 .time-block{
@@ -32,37 +47,46 @@ textarea{
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+  height: 65px;
+  border-top: 1px solid white;
 }
 
 .hour {
-  background-color: #ffffff;
+  /* background-color: rgb(170, 226, 252); */
   color: #000000;
-  border-top: 1px dashed #000000;
+  font-weight: bold;
+  /* border-top: 1px solid #000000; */
+  padding-top: 20px;
+}
+
+.timeSlots {
+  margin-bottom: 20px;
 }
 
 .past {
-  background-color: #d3d3d3;
+  /* background-color: rgb(252, 195, 204); */
+  background-color: rgb(191, 231, 250);
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  /* background-color: rgb(250, 124, 145); */
+  background-color: rgb(82, 183, 250);
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  /* background-color: rgb(252, 40, 76); */
+  background-color: rgb(2, 130, 228);
   color: white;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+  border-left: 4px solid white;
+  /* border-top-right-radius: 15px; */
+  /* border-bottom-right-radius: 15px; */
+  font-weight: bold;
+  /* background-color: #06AED5; */
 }
 
 .saveBtn i:hover {

@@ -11,7 +11,7 @@ $(document).ready(function() {
 
   // sets time in military time and displays in header
   function setTime() {
-    var date = moment().format("dddd, MMMM Do YYYY, k:mm:ss");
+    var date = moment().format("dddd, MMMM Do YYYY");
     $currentDay.innerHTML = date;
     $("#currentDay").text(date);
   }
