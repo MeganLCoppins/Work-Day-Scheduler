@@ -2,7 +2,7 @@
 
 ## Description
 
-I created a calendar application that functions to save events for each hour of the work day, display the current date, and indicate whether an event or time block is in the past, present or future. 
+I created a calendar application that functions to save events for each hour of the work day, display the current date, and indicate whether an event or time block is in the past, present or future by the color of the time block. 
 
 ## Table of Contents
 * [Usage](#Usage)
