@@ -1,6 +1,4 @@
 body {
-  /* font-family: 'Open Sans', sans-serif; */
-  /* background-color: rgb(170, 226, 252); */
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1;
@@ -50,10 +48,8 @@ textarea {
 }
 
 .hour {
-  /* background-color: rgb(170, 226, 252); */
   color: #000000;
   font-weight: bold;
-  /* border-top: 1px solid #000000; */
   padding-top: 20px;
 }
 
@@ -62,19 +58,16 @@ textarea {
 }
 
 .past {
-  /* background-color: rgb(252, 195, 204); */
   background-color: rgb(191, 231, 250);
   color: white;
 }
 
 .present {
-  /* background-color: rgb(250, 124, 145); */
   background-color: rgb(82, 183, 250);
   color: white;
 }
 
 .future {
-  /* background-color: rgb(252, 40, 76); */
   background-color: rgb(2, 130, 228);
   color: white;
 }
@@ -82,15 +75,14 @@ textarea {
 .clear {
   background-color: darkcyan;
   color: white;
-  width: 50%;
+  width: 53%;
+  margin-left: 24%;
+  margin-bottom: 2%;
 }
 
 .saveBtn {
   border-left: 4px solid white;
-  /* border-top-right-radius: 15px; */
-  /* border-bottom-right-radius: 15px; */
   font-weight: bold;
-  /* background-color: #06AED5; */
 }
 
 .saveBtn i:hover {
