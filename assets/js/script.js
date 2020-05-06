@@ -9,7 +9,7 @@ $(document).ready(function() {
   renderNotes();
 
 
-  // sets time in military time and displays in header
+  // sets date and displays in header
   function setTime() {
     var date = moment().format("dddd, MMMM Do YYYY");
     $currentDay.innerHTML = date;
@@ -17,7 +17,7 @@ $(document).ready(function() {
   }
 
   // when save button is clicked input converted to string and saved in local storage
-  // targeting the sibling element with the class of col-10 to get its value as well as targeting the sibling with the id attribute to link to specific hour
+  // targeting the sibling element with the class of description to get its value as well as targeting the sibling with the id attribute to link to specific hour
   $(".saveBtn").on("click", function(e) {
     e.preventDefault();
     var val = $(this)
@@ -31,6 +31,12 @@ $(document).ready(function() {
     localStorage.setItem("notes", JSON.stringify(notes));
   });
 
+  $(".clear").on("click", function(e) {
+    e.preventDefault();
+    $(".description").val(" ");
+    var notes = {}
+    localStorage.setItem("notes", JSON.stringify(notes));
+  });
 
 // retrieving from local storage and converting any note from string to object
   function getNotes() {
