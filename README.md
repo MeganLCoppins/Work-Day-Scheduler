@@ -23,6 +23,7 @@ To use the Work Day Scheduler go to the [deployed-link](#Deployed-Link).
 * HTML
 * CSS
 * jQuery
+* Local Storage
 * Moment.js
 
 ## Deployed-Link
