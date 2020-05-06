@@ -82,6 +82,7 @@ textarea {
 .clear {
   background-color: darkcyan;
   color: white;
+  width: 50%;
 }
 
 .saveBtn {
