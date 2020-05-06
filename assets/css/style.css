@@ -33,6 +33,7 @@ textarea {
 .description {
   white-space: pre-wrap;
   text-align: center;
+  font-size: 18px;
   border-left: 2px solid white;
 }
 
