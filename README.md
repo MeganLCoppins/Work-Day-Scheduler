@@ -13,11 +13,11 @@ I created a calendar application that functions to save events for each hour of 
 
 ## Usage
 
-To use the Work Day Scheduler go to the [deployed-link](#Deployed-Link).
+To use the Work Day Scheduler go to the [deployed-link](https://meganlcoppins.github.io/Work-Day-Scheduler/).
 
 ## Demonstration
 
-<img src="./assets/images/WorkDayScheduler.png" alt="work day scheduler app">
+<img src="./assets/images/workdayscheduler.png" alt="work day scheduler app">
 
 ## Technologies
 * HTML
