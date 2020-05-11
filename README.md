@@ -17,7 +17,7 @@ To use the Work Day Scheduler go to the [deployed-link](https://meganlcoppins.gi
 
 ## Demonstration
 
-<img src="./assets/images/workdayscheduler.png" alt="work day scheduler app">
+<img src="https://github.com/MeganLCoppins/Work-Day-Scheduler/blob/master/assets/images/WorkDayScheduler.png?raw=true" alt="work day scheduler app">
 
 ## Technologies
 * HTML
